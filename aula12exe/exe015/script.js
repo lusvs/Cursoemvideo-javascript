@@ -29,9 +29,12 @@ function verificar(){
             }else if (idade < 60){
                 //Adulto
                 img.setAttribute('src', 'img/adulto.jpg')
-            } else{
+            } else if (idade < 117){
                 //Idoso
                 img.setAttribute('src', 'img/idoso.jpg')
+            } else{
+                //Morto
+                img.setAttribute('src', 'img/morto.jpg')
             }
         // Se for mulher
         } else if (fsex[1].checked){
@@ -43,11 +46,14 @@ function verificar(){
                 //Jovem
                 img.setAttribute('src', 'img/garota.jpg')
             }else if (idade < 60){
-                //Adulto
+                //Adulta
                 img.setAttribute('src', 'img/adulta.jpg')
-            } else{
-                //Idoso
+            } else if (idade < 123){
+                //Idosa
                 img.setAttribute('src', 'img/idosa.jpg')
+            } else{
+                // Morta
+                img.setAttribute('src', 'img/morto.jpg')
             }
         }
         // Faz a resposta ir pro meio
