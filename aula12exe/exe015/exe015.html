@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe015</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="">
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+           <p>Ano do nascimento:
+            <input name="txtano" id="txtano" type="number" min="0">
+        </p> 
+        <p>Sexo: 
+            <input name="radsex" id="masc" type="radio" checked>
+            <label for="masc">Maculino</label>
+            <input name="radsex" id="fem" type="radio">
+            <label for="fem">Feminino</label>
+        </p>
+         <p> <!--quando o button 'verificar' for apertado(onclick) a function 'verificar' vai ser acionada-->
+            <input type="button" value="Verificar" onclick="verificar()">
+        </p>
+            
+        </div>
+        <div id="res">
+            <p>preencha os dados acima para ver o resultado</p>
+        </div>       
+    </section>
+    <footer>
+        <p>&copy; lusvs</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
